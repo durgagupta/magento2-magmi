@@ -1,0 +1,55 @@
+title:MAGMI by dweeves - version:0.7.23-git
+startup:Running Magmi Product Import Engine v1.10 by dweeves
+startup:Import Profile:config_product
+startup:Import Mode:create
+step:step:0.5%
+startup:Attributeset update is enabled.
+plugin;Magmi_CSVDataSource;pluginhello:CSV Datasource-1.3.1-Dweeves- 
+plugin;CategoryImporter;pluginhello:On the fly category creator/importer-0.2.5-Dweeves-http://wiki.magmi.org/index.php?title=On_the_fly_category_creator/importer 
+plugin;ImageAttributeItemProcessor;pluginhello:Image attributes processor-1.0.33a-Dweeves, Tommy Goode-http://wiki.magmi.org/index.php?title=Image_attributes_processor 
+plugin;DefaultValuesItemProcessor;pluginhello:Default Values setter-0.0.5-Dweeves-http://wiki.magmi.org/index.php?title=Default_Values_setter 
+plugin;Magmi_ConfigurableItemProcessor;pluginhello:Configurable Item processor-1.3.7a-Dweeves-http://wiki.magmi.org/index.php?title=Configurable_Item_processor 
+plugin;Magmi_DefaultAttributeItemProcessor;pluginhello:Standard Attribute Import-1.1-Dweeves- 
+title:MAGMI by dweeves - version:0.7.23-git
+startup:Import Profile:config_product
+startup:Import Mode:create
+step:step:0.5%
+startup:Attributeset update is enabled.
+info:Initialized attribute_set_infos!
+plugin;Magmi_CSVDataSource;pluginhello:CSV Datasource-1.3.1-Dweeves- 
+plugin;CategoryImporter;pluginhello:On the fly category creator/importer-0.2.5-Dweeves-http://wiki.magmi.org/index.php?title=On_the_fly_category_creator/importer 
+plugin;ImageAttributeItemProcessor;pluginhello:Image attributes processor-1.0.33a-Dweeves, Tommy Goode-http://wiki.magmi.org/index.php?title=Image_attributes_processor 
+plugin;DefaultValuesItemProcessor;pluginhello:Default Values setter-0.0.5-Dweeves-http://wiki.magmi.org/index.php?title=Default_Values_setter 
+plugin;Magmi_ConfigurableItemProcessor;pluginhello:Configurable Item processor-1.3.7a-Dweeves-http://wiki.magmi.org/index.php?title=Configurable_Item_processor 
+plugin;Magmi_DefaultAttributeItemProcessor;pluginhello:Standard Attribute Import-1.1-Dweeves- 
+plugin;Magmi_DefaultAttributeItemProcessor;pluginhello:Standard Attribute Import-1.1-Dweeves- 
+startup:Performing Datasource Lookup...
+lookup:1:0.000267028808594
+startup:Found 1 records, took 0.000267028808594 sec
+columns:18
+plugin;DefaultValuesItemProcessor;startup:Default Values setter v0.0.5 - Adding Columns visibility,is_in_stock
+plugin;DefaultValuesItemProcessor;startup:Default Values setter v0.0.5 - Adding Columns 
+plugin;Magmi_ConfigurableItemProcessor;startup:Configurable Item processor v1.3.7a - no options_container set, defaulting to :Block after product info
+plugin;Magmi_DefaultAttributeItemProcessor;startup:Standard Attribute Import v1.1 - Newly created items will have default values for columns:store,status,page_layout,tax_class_id
+plugin;Magmi_DefaultAttributeItemProcessor;startup:Standard Attribute Import v1.1 - Newly created items will have default values for columns:
+plugin;Magmi_DefaultAttributeItemProcessor;startup:Standard Attribute Import v1.1 - Newly created items will have default values for columns:
+startup:Ajusted processed columns:26
+itime:1 - 0.00031304359436 - 0.00031304359436
+dbtime:0 - 0 - 0 - 0
+plugin;Magmi_ConfigurableItemProcessor;warning:SKU 019190_1 - Configurable Item processor v1.3.7a -  019190, 019191, 019192, 019193, 019194
+plugin;Magmi_ConfigurableItemProcessor;warning:SKU 019190_1 - Configurable Item processor v1.3.7a -  019190, 019191, 019192, 019193, 019194---fixed
+plugin;Magmi_ConfigurableItemProcessor;warning:SKU 019190_1 - Configurable Item processor v1.3.7a - INSERT INTO catalog_product_super_link (`parent_id`,`product_id`) SELECT cpec.entity_id as parent_id,cpes.entity_id  as product_id<br>				  FROM catalog_product_entity as cpec<br>				  JOIN catalog_product_entity as cpes ON cpes.type_id IN ('simple','virtual') AND cpes.sku IN ('019190','019191','019192','019193','019194')<br>			  	  WHERE cpec.entity_id=?---
+plugin;Magmi_ConfigurableItemProcessor;warning:SKU 019190_1 - Configurable Item processor v1.3.7a - PID 30171---
+plugin;Magmi_ConfigurableItemProcessor;warning:SKU 019190_1 - Configurable Item processor v1.3.7a -  019190, 019191, 019192, 019193, 019194
+plugin;Magmi_ConfigurableItemProcessor;warning:SKU 019190_1 - Configurable Item processor v1.3.7a -  019190, 019191, 019192, 019193, 019194---fixed
+plugin;Magmi_ConfigurableItemProcessor;warning:SKU 019190_1 - Configurable Item processor v1.3.7a - INSERT INTO catalog_product_super_link (`parent_id`,`product_id`) SELECT cpec.entity_id as parent_id,cpes.entity_id  as product_id<br>				  FROM catalog_product_entity as cpec<br>				  JOIN catalog_product_entity as cpes ON cpes.type_id IN ('simple','virtual') AND cpes.sku IN ('019190','019191','019192','019193','019194')<br>			  	  WHERE cpec.entity_id=?---
+plugin;Magmi_ConfigurableItemProcessor;warning:SKU 019190_1 - Configurable Item processor v1.3.7a - PID 30171---
+plugin;ImageAttributeItemProcessor;warning:SKU 019190_1 - Image attributes processor v1.0.33a - 01919001.jpg cannot be found in images path
+plugin;CategoryImporter;info:On the fly category creator/importer v0.2.5 - Updating Category children count....
+plugin;CategoryImporter;info:On the fly category creator/importer v0.2.5 - Updating Category children count....
+itime:1 - 0.0589408874512 - 0.058357000351
+dbtime:51 - 0.0500545501709 - 0.0500545501709 - 51
+info:Skus imported OK:1/1
+plugin;CategoryImporter;info:On the fly category creator/importer v0.2.5 - Updating Category children count....
+plugin;CategoryImporter;info:On the fly category creator/importer v0.2.5 - Updating Category children count....
+end:Import Ended

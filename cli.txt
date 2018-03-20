@@ -1,0 +1,1 @@
+php magmi.cli.php -profile=myprofile -mode=create update
